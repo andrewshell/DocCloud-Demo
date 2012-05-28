@@ -23,7 +23,7 @@ function authUser($users)
         !isset($users[$_SERVER['PHP_AUTH_USER']]) ||
         0 != strcmp($users[$_SERVER['PHP_AUTH_USER']], $_SERVER['PHP_AUTH_PW'])
     ) {
-        header('WWW-Authenticate: Basic realm="CloudDoc Demo"');
+        header('WWW-Authenticate: Basic realm="DocCloud Demo"');
         header('HTTP/1.0 401 Unauthorized');
         echo 'You must login to use this demo';
         exit;

@@ -38,7 +38,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 ?>
 <DOCTYPE html>
 <html>
-<head><title>CloudDoc Demo</title></head>
+<head><title>DocCloud Demo</title></head>
 <body>
 <ul>
 <?php foreach ($docs as $filename): ?>
