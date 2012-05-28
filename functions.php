@@ -3,9 +3,9 @@ $users = array(
     'admin' => 'doccloud',
 );
 
-define('MY_DOMAIN', 'web03.andrewshell.org');
+define('MY_DOMAIN', 'doccloud.andrewshell.org');
 define('MY_PORT',   '80');
-define('MY_PATH',   '/updated.php');
+define('MY_PATH',   '/');
 
 define('DOC_PATH',  __DIR__ . '/cache/docs/');
 define('DATA_FILE', __DIR__ . '/cache/data.php');
@@ -129,7 +129,7 @@ function requestNotifications($cloudUrl, $urls)
         'notifyProcedure' => '',
         'domain'   => MY_DOMAIN,
         'port'     => MY_PORT,
-        'path'     => MY_PATH,
+        'path'     => MY_PATH . 'updated.php',
         'protocol' => 'http-post',
     );
     foreach ($urls as $k => $v) {
@@ -162,7 +162,7 @@ function saveFileContents($filename, $contents)
         return false;
     }
     file_put_contents(DOC_PATH . '/' . $filename, $contents);
-    pingCloud('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '?filename=' . urlencode($filename));
+    pingCloud('http://' . $_SERVER['HTTP_HOST'] . MY_PATH . 'index.php?filename=' . urlencode($filename));
     return true;
 }
 
