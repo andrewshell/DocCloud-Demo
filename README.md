@@ -9,7 +9,7 @@ When I read this I thought.  Isn't that basically what RSS Cloud already does?  
 
 What I propose is the addition to the specification that allows for an X-RSS-Cloud HTTP header that specifies the RSS Cloud server.  Since we're limited by a single URL, Clouds discovered by this method are assumed to work via REST as opposed to XML-RPC or SOAP.
 
-Everything else functions exactly as it would in the [RSS Cloud Specification](http://rsscloud.org/walkthrough.html).  Since RSS Cloud doesn't parse the "feed" but rather just checks to see if it has changed, this HTTP header method can be used to track updates for any kind of document accessable from on the internet including binary files like images.
+Everything else functions exactly as it would in the [RSS Cloud Specification](http://rsscloud.org/walkthrough.html).  Since RSS Cloud doesn't parse the "feed" but rather just checks to see if it has changed, this HTTP header method can be used to track updates for any kind of document accessible from on the internet including binary files like images.
 
 Installation
 ------------
