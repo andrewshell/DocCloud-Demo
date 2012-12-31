@@ -48,17 +48,4 @@ If you click on it you'll see the same contents as your original `test.txt` file
 
 Now if you click on the longer synchronised filename it should be updated with your new content.  This was accomplished by the full ping process.  You can also try this with several sites set up across many servers and it would work the same way.
 
-Demo
-----
-
-There is a demo of this software running at [http://doccloud.andrewshell.org/](http://doccloud.andrewshell.org/) if you would like to test syncing documents from there. You can login with
-
-* Username: admin
-* Password: doccloud
-
-There is also a file there that I'm updating once a minute that you can subscribe to and watch it get updates.  The URL is:
-
-    http://doccloud.andrewshell.org/index.php?filename=updating.txt
-
-If you add this to your own copy of this app you'll see it's updated regularly.
 
